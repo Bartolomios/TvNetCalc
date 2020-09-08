@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Netkom</title>
+	<link rel="stylesheet" href="styleCalc.css">	
+	<script src="calc.js" defer></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+<body>
+	<div class="calc-section">
+<div class="custom-container">
+	<form class="form-container">
+	<div class="row">
+
+		<h5>Pakiet telewizyjny</h5>
+		<div class="input-block">
+			
+			<label>
+			<input type="radio" name="tv-pack" onChange="settingOptions(this)" checked>
+			<span class="checkmark"></span>
+			<p>Pakiet Komfort+</p>
+			<span>( 158 kanalów )</span>
+			
+			</label>
+			<label>
+			<input type="radio" name="tv-pack" onChange="settingOptions(this)">
+			<span class="checkmark"></span>
+			<p>Pakiet Prestiż</p>
+			<span>( 191 kanałów )</span>
+			
+			</label>
+			<label>
+			<input type="radio" name="tv-pack" onChange="settingOptions(this)">
+			<span class="checkmark"></span>
+			<p>Pakiet MAX</p>
+			<span>( 226 kanałów )</span>
+			
+			</label>
+		</div>
+	</div>
+	<div class="row">
+
+		<h5>Odbiornik</h5>
+		<div class="input-block">
+			<label>
+			<input type="radio" name="tv-reciever" checked onChange="settingOptions(this)">
+			<span class="checkmark"></span>
+			<p>HD</p>
+			</label>
+			<label>
+			<input type="radio" name="tv-reciever" onChange="settingOptions(this)">
+			<span class="checkmark"></span>
+			<p>4K MAXX</p>
+			</label>
+			
+		</div>
+	</div>
+	<div class="row">
+
+		<h5>Dekoder</h5>
+		<div class="input-block">
+			<label>
+			<input type="radio" name="dekoder" checked onChange="settingOptions(this)">
+			<span class="checkmark"></span>
+			<p>Jeden dekoder</p>
+			</label>
+			<label>
+			<input type="radio" name="dekoder" onChange="settingOptions(this)">
+			<span class="checkmark"></span>
+			<p>Dwa dekodery</p>
+			</label>
+			
+		</div>
+	</div>
+	<div class="row">
+
+		<h5>Okres zobowiązania</h5>
+		<div class="input-block">
+			<label>
+			<input type="radio" name="tv-time" checked >
+			<span class="checkmark"></span>
+			<p>24 miesiące</p>
+			</label>
+			
+		</div>
+	</div>
+	<div class="row">
+
+		<h5>Pakiet internetowy</h5>
+		<div class="input-block">
+			<label>
+			<input type="radio" name="net-pack" checked onChange="settingOptions(this)">
+			<span class="checkmark"></span>
+			<p>50 MB</p>
+			</label>
+			<label>
+			<input type="radio" name="net-pack" onChange="settingOptions(this)">
+			<span class="checkmark"></span>
+			<p>100 MB</p>
+			</label>
+			<label>
+			<input type="radio" name="net-pack" onChange="settingOptions(this)">
+			<span class="checkmark"></span>
+			<p>200 MB</p>
+			</label>
+			<label>
+			<input type="radio" name="net-pack" onChange="settingOptions(this)">
+			<span class="checkmark"></span>
+			<p>500 MB</p>
+			</label>
+		</div>
+	</div>
+	<div class="row">
+
+		<h5>Budynek</h5>
+		<div class="input-block">
+			<label>
+			<input type="radio" name="building" onChange="settingOptions(this)">
+			<span class="checkmark"></span>
+			<p>Jednorodzinny</p>
+			</label>
+			<label>
+			<input type="radio" name="building" checked onChange="settingOptions(this)">
+			<span class="checkmark"></span>
+			<p>Wielorodzinny</p>
+			</label>
+			
+		</div>
+	</div>
+	</form>
+	<div class="summary-box">
+		<h4>Podsumowanie</h4>
+		<h6>PAKIET TV</h6>
+		<p id="tv-pack">Pakiet Komfrot+</p>
+		<h6>ODBIORNIK</h6>
+		<p id="tv-reciever">HD</p>
+		<h6>DEKODER</h6>
+		<p id="dekoder">1</p>
+		<h6>OKRES ZOBOWIĄZANIA</h6>
+		<p>24 miesiące</p>
+		<h6>PAKIET INTERNETOWY</h6>
+		<p id="net-pack">100 MBit</p>
+		<h6>BUDYNEK</h6>
+		<p id="building">Wielorodzinny</p>
+		<h6>CAŁKOWITY KOSZT</h6>
+		<p id="summary">0 zł</p>
+
+	</div>
+	</div>
+</div>
+</body>
+</html>
+
+
+
